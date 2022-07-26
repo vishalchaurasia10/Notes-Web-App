@@ -98,8 +98,8 @@ function showNotes() {
     <div class="heading flex">
         <p class="title w-1/2 text-2xl mt-2 mb-4 font-semibold">${titlesObj[index]}</p>
         <div class="btns w-1/2 flex justify-end">
-            <button class="pin w-12 shadow-xl border border-[rgba(255,255,255,0.1)] h-12 p-2 mx-2 rounded-full" title="Pin Note" id="${"pin"+index}"><img class="transition-all duration-300 w-7 h-7" src="/images/pin.png" id="${index + 1000}" onclick="pinNote(this.id)" alt=""></button>
-            <button class="important w-12 h-12 p-2 mx-2 rounded-full shadow-xl border border-[rgba(255,255,255,0.1)]" title="Bookmark Note"><img class=" w-8 h-8" id="${j++}" onclick="bookmark(this.id)" src="/images/star.png" alt=""></button>
+            <button class="pin w-12 shadow-xl border border-[rgba(255,255,255,0.1)] h-12 p-2 mx-2 rounded-full" title="Pin Note" id="${"pin"+index}"><img class="transition-all duration-300 w-7 h-7" src="images/pin.png" id="${index + 1000}" onclick="pinNote(this.id)" alt=""></button>
+            <button class="important w-12 h-12 p-2 mx-2 rounded-full shadow-xl border border-[rgba(255,255,255,0.1)]" title="Bookmark Note"><img class=" w-8 h-8" id="${j++}" onclick="bookmark(this.id)" src="images/star.png" alt=""></button>
         </div>
     </div>
     <div class="noteText md:overflow-y-auto md:h-[8.5rem]">${element}
