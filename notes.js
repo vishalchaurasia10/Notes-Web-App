@@ -114,8 +114,8 @@ function showNotes() {
     <div class="heading flex">
         <p class="title w-1/2 text-2xl mt-2 mb-4 font-semibold">${titlesObj[index]}</p>
         <div class="btns w-1/2 flex justify-end">
-            <button class="pin w-12 shadow-xl border border-[rgba(255,255,255,0.1)] h-12 p-2 mx-2 rounded-full" title="Pin Note" id="${"pin" + index}"><img class="transition-all duration-300 w-7 h-7" src="/images/pin.png" id="${index + 1000}" onclick="pinNote(this.id)" alt=""></button>
-            <button class="edit w-12 h-12 p-2 mx-2 rounded-full shadow-xl border border-[rgba(255,255,255,0.1)]" title="Edit Note"><img class=" w-6 h-6 mx-auto" id="${index + j}" onclick="edit(this.id)" src="/images/edit.png" alt=""></button>
+            <button class="pin w-12 shadow-xl border border-[rgba(255,255,255,0.1)] h-12 p-2 mx-2 rounded-full" title="Pin Note" id="${"pin" + index}"><img class="transition-all duration-300 w-7 h-7" src="images/pin.png" id="${index + 1000}" onclick="pinNote(this.id)" alt=""></button>
+            <button class="edit w-12 h-12 p-2 mx-2 rounded-full shadow-xl border border-[rgba(255,255,255,0.1)]" title="Edit Note"><img class=" w-6 h-6 mx-auto" id="${index + j}" onclick="edit(this.id)" src="images/edit.png" alt=""></button>
         </div>
     </div>
     <div class="noteText overflow-x-hidden md:overflow-y-auto md:h-[8.5rem]" id="${String.fromCharCode(index + 65)}">${element}
