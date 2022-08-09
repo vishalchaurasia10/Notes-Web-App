@@ -2,8 +2,14 @@ function loading() {
     document.getElementById('preloader').classList.add('hidden');
 }
 
-
 let themeVar = 0;
+let clear = localStorage.getItem('clear');
+if(clear==null){
+    localStorage.clear();
+    localStorage.setItem('clear',1);
+    showNotes();
+}
+
 document.getElementById("switchTheme").addEventListener('click', changeTheme);
 document.getElementById("switchThemeMoveBtn").addEventListener('click', changeTheme);
 function changeTheme() {
