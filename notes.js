@@ -189,13 +189,16 @@ function save(index) {
 function deleteNote(index) {
     let notes = localStorage.getItem('notes');
     let titles = localStorage.getItem('titles');
+    let dates = localStorage.getItem('dates');
     if (notes == null) {
         notesObj = [];
         titlesObj = [];
+        datesObj = [];
     }
     else {
         notesObj = JSON.parse(notes);
         titlesObj = JSON.parse(titles);
+        datesObj = JSON.parse(dates);
     }
     if (index == 0) {
         if (localStorage.getItem('pinvar') == 1)
@@ -203,8 +206,10 @@ function deleteNote(index) {
     }
     notesObj.splice(index, 1);
     titlesObj.splice(index, 1);
+    datesObj.splice(index, 1);
     localStorage.setItem("notes", JSON.stringify(notesObj));
     localStorage.setItem("titles", JSON.stringify(titlesObj));
+    localStorage.setItem("dates", JSON.stringify(datesObj));
     showNotes();
 }
 function pinNote(index) {
